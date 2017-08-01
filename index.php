@@ -1,6 +1,6 @@
-<? php
+<?php
 
-include_once ("/include/db-con.php");
+include_once ("include/db-con.php");
 
 
 //check if the form has been submitted
@@ -34,7 +34,6 @@ if(isset($_POST['signup'])){
 		}
 	
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
