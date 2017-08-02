@@ -105,6 +105,15 @@ a.cart-contents {
     background: #fff;
     padding: 10px 15px!important;
 }
+
+/*--- Registration Form --- */
+
+#registration-form {
+    border: 1px solid #555;
+}
+.sign-in {
+    margin-left: 15px;
+}
 .sign-in a {
     text-decoration: none;
     color: #000;
@@ -112,10 +121,25 @@ a.cart-contents {
     background: #fff;
     padding: 8px;
 }
+.sign-up-header{
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
 .form-group {
 	display: block!important;
 	padding: 10px;
+    margin-bottom: 0px;
 }
 button#submit-btn {
 	padding: 10px;
+}
+.account-confirm p{
+margin-left: 15px;
+color: red;
+}
+.email-exist-notification {
+    color:red;
 }
