@@ -18,6 +18,99 @@ html {
     overflow-y: scroll;
     font-size: 100%;
     -webkit-font-smoothing: antialiased;
+    word-wrap: break-word;
+    display: block;
+}
+a {
+    color: inherit;
+    -webkit-transition: background-color .15s,color .15s,border-color .15s,text-shadow .15s,opacity .15s;
+    transition: background-color .15s,color .15s,border-color .15s,text-shadow .15s,opacity .15s;
+    border-bottom: 2px solid #966B3A;
+}
+a, .h, h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 18px;
+    line-height: 1.125rem;
+    color: #000;
+}
+.site-header {
+    background: 0 0;
+    position: relative;
+    z-index: 1;
+}
+.site-title {
+    width: 297px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -44px;
+    margin-bottom: -40px;
+    padding: 15px;
+    position: relative;
+}
+.site-title a {
+    width: 297px;
+    height: 207px;
+    /*background-image: url(../images/wootten-cordwainer-and-leather-craftsmen.png);*/
+    border: none;
+    text-align: left;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.menu {
+    background: 0 0;
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-1 {
+    left: 0;
+}
+.menu ul li {
+    display: inline;
+}
+.menu a {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+    font-family: Monaco,monospace;
+    font-size: 11px;
+    line-height: 18px;
+    line-height: 1.125rem;
+    color: #666;
+}
+.menu a:hover {
+    text-decoration: none;
+    color: #000;
+}
+#left-menu {
+	position: relative;
+	left: 273px;
+}
+#right-menu {
+    position: relative;
+    left: 16px;
+}
+a.cart-contents {
+    position: absolute;
+    top: -19px;
+    right: 297px;
+    background: #fff;
+    padding: 10px 15px!important;
+}
+.sign-in a {
+    text-decoration: none;
+    color: #000;
+    border: none;
+    background: #fff;
+    padding: 8px;
 }
 .form-group {
 	display: block!important;
