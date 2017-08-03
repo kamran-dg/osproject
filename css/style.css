@@ -85,10 +85,12 @@ a, .h, h1, h2, h3, h4, h5, h6 {
     line-height: 18px;
     line-height: 1.125rem;
     color: #666;
+    cursor: default;
 }
 .menu a:hover {
     text-decoration: none;
     color: #000;
+    cursor: default;
 }
 #left-menu {
 	position: relative;
@@ -110,6 +112,7 @@ a.cart-contents {
 
 #registration-form {
     border: 1px solid #555;
+    margin-bottom: 15px;
 }
 .sign-in {
     margin-left: 15px;

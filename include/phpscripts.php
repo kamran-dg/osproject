@@ -57,6 +57,30 @@ else {
 }
 
 	}
+
+// Login User form
+
+	if (isset($_POST['login-button'])) {
+		$email = mysqli_real_escape_string($db, $_POST['lg-email']);
+		$password = mysqli_real_escape_string($db, $_POST['lg-pwd']);
+
+		
+
+		if (count($errors) == 0) {
+			$password = md5($password);
+			$query = "SELECT * FROM users WHERE u_email='$email' AND u_password='$password'";
+			$results = mysqli_query($db, $query);
+
+			if (mysqli_num_rows($results) == 1) {
+				$_SESSION['u_email'] = $email;
+				$_SESSION['success'] = "You are now logged in";
+			
+			}else {
+				$_SESSION['notification'] = "* You entered a wrong username/password";
+			}
+		}
+	}
+
 ?>
 
 
