@@ -1,3 +1,3 @@
 <?php
-$db = mysqli_connect('localhost', 'root', 'devtron123', 'os-project');
+$db = mysqli_connect('localhost', 'kamrandg', '', 'os-project');
 ?>
