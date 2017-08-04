@@ -34,12 +34,10 @@ if ($row['u_email'] == $email) {
 
 }
 
-
 else {
-    
 
+	$u_key = rand();
 
-			$u_key = rand();
 		
 		$query = "INSERT INTO users(u_name,phoneno,u_email,u_password,u_key,u_active) VALUES('$u_name',$phoneno,'$email','$enc_password','$u_key',0)";
 		mysqli_query($db, $query);
@@ -70,16 +68,34 @@ else {
 			$password = md5($password);
 			$query = "SELECT * FROM users WHERE u_email='$email' AND u_password='$password'";
 			$results = mysqli_query($db, $query);
+			$row = mysqli_fetch_assoc($results);
 
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['u_email'] = $email;
-				$_SESSION['success'] = "You are now logged in";
+				$_SESSION['u_name'] = $row['u_name'];
+				$_SESSION['u_email'] = $row['u_email'];
+				header("Location: userhome.php");
 			
 			}else {
 				$_SESSION['notification'] = "* You entered a wrong username/password";
 			}
 		}
 	}
+
+//--- Upload Image
+
+
+	if(isset($_POST['upload_btn'])){
+		move_uploaded_file($_FILES['file']['tmp_name'],"user/profiles/".$_FILES['file']['name']);
+		
+		$profile_update_querry = mysqli_query($db,"UPDATE users SET u_image = '".$_FILES['file']['name']."' WHERE u_email = '".$_SESSION['u_email']."'");
+
+	}
+if(isset($_POST['user-logout'])) {
+	session_unset();
+	session_destroy();
+	header("Location: login.php");
+}
 
 ?>
 

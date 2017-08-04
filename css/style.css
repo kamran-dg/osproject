@@ -33,7 +33,9 @@ a, .h, h1, h2, h3, h4, h5, h6 {
     line-height: 18px;
     line-height: 1.125rem;
     color: #000;
+    text-decoration: none;
 }
+
 .site-header {
     background: 0 0;
     position: relative;
@@ -145,4 +147,38 @@ color: red;
 }
 .email-exist-notification {
     color:red;
+}
+.profile-menu {
+    background:  0 0 ;
+    margin-top: -30px;
+}
+.profile-menu ul {
+    list-style: none!important;
+}
+.profile-menu ul li{
+    display: inline-block;
+}
+.profile-menu a {
+    border: none;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #666;
+}
+.profile-menu a:hover {
+    text-decoration: none;
+    color: #000;
+}
+input[type=file] {
+    display: inline-block !important;
+}
+#user-profile-menu li img {
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+}
+input.user-logout {
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
 }

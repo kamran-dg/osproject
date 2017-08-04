@@ -9,7 +9,7 @@ include "header.php";
 <div class="container" id=content-registration>
 <h1 class="sign-up-header">Login</h1>
   <h2>Sign Up, if you have not already an account with online store. Click on create an account button for signup.</h2>
-  <form class="form" id="registration-form" name="login-form" method="post" action="login.php" >
+  <form class="form" id="registration-form" name="login-form" method="post" action="userhome.php" >
 
   	<?php if (isset($_SESSION['notification'])) : ?>
 			<div class="account-confirm" >
@@ -56,5 +56,3 @@ include "header.php";
   </form>
 </div>
 
-</body>
-</html>
