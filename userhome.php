@@ -1,11 +1,10 @@
 <?php
 include_once ("include/phpscripts.php");
 ?>
+
 <?php
 include "header.php";
 ?>
-
-
 
 
 <br><br>
@@ -42,11 +41,11 @@ include "header.php";
 ?>
 	
 </li>
-					<li><a href="#">Edit Profile</a></li>
+					<li><a href="editprofile.php">Edit Profile</a></li>
+					<li><a href="viewprofile.php">View Profile</a></li>
 					<li><form action="login.php" method="post"><a href="login.php"><input type="submit"  name="user-logout" value="Logout" class="user-logout"></a></form></li>
 				</ul>
 		</div>
     </div>
 
-
-</div>		
+</div>	

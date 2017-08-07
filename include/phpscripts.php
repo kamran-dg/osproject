@@ -74,6 +74,8 @@ else {
 				$_SESSION['u_email'] = $email;
 				$_SESSION['u_name'] = $row['u_name'];
 				$_SESSION['u_email'] = $row['u_email'];
+				$_SESSION['user_id'] = $row['user_id'];
+				
 				header("Location: userhome.php");
 			
 			}else {
@@ -91,6 +93,8 @@ else {
 		$profile_update_querry = mysqli_query($db,"UPDATE users SET u_image = '".$_FILES['file']['name']."' WHERE u_email = '".$_SESSION['u_email']."'");
 
 	}
+// logout 
+
 if(isset($_POST['user-logout'])) {
 	session_unset();
 	session_destroy();
@@ -98,8 +102,3 @@ if(isset($_POST['user-logout'])) {
 }
 
 ?>
-
-
-
-
-

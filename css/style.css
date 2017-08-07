@@ -110,7 +110,7 @@ a.cart-contents {
     padding: 10px 15px!important;
 }
 
-/*--- Registration Form --- */
+/*--- Registration Form  and Login pGE--- */
 
 #registration-form {
     border: 1px solid #555;
@@ -148,6 +148,9 @@ color: red;
 .email-exist-notification {
     color:red;
 }
+
+/*--- PROFILE PAGE ---*/
+
 .profile-menu {
     background:  0 0 ;
     margin-top: -30px;
@@ -157,6 +160,7 @@ color: red;
 }
 .profile-menu ul li{
     display: inline-block;
+    list-style: none!important;
 }
 .profile-menu a {
     border: none;
@@ -181,4 +185,19 @@ input.user-logout {
     background: #fff;
     border: none;
     border-radius: 5px;
+}
+#update-form {
+    border: 1px solid #555;
+    margin-bottom: 15px;
+}
+.tbl-userprofile {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.tbl-userprofile th {
+    padding: 10px;
+    text-align: center;
+}
+.tbl-userprofile tr td {
+    padding: 10px;
 }
