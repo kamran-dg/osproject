@@ -3,9 +3,11 @@ include_once ("include/phpscripts.php");
 ?>
 <?php
 include "header.php";
+include "slider.php";
 ?>
 
 <br><br>
+
 <div class="container" id=content-registration>
 <h1 class="sign-up-header">Sign Up</h1>
   <h2>Sign Up, if you have not already an account with online store.</h2>
@@ -61,4 +63,5 @@ include "header.php";
 </div>
 <?php
 include "bottomcontentbar.php";
+include "footer.php";
 ?>

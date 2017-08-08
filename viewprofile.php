@@ -75,4 +75,5 @@ mysqli_close($db);
 
 <?php
 include "bottomcontentbar.php";
+include "footer.php";
 ?>

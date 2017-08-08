@@ -55,5 +55,6 @@ include "header.php";
 
 <?php
 include "bottomcontentbar.php";
+include "footer.php";
 ?>
 
