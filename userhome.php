@@ -10,7 +10,7 @@ include "header.php";
 <br><br>
 <div class="container" id=main-content>
 	<h1 class="sign-up-header">Welcom to Main Page</h1>
- 	 <h2>Welcome to <strong> <?php echo $_SESSION['u_name'];  ?></strong></h2>
+ 	 <h2>Welcome to <strong> <a href="userhome.php"><?php echo $_SESSION['u_name'];  ?></a></strong></h2>
 
   
     <div class="col-md-12" >
@@ -31,6 +31,7 @@ include "header.php";
 			$q = mysqli_query($db, "SELECT * FROM users WHERE u_email = '".$_SESSION['u_email']."'");
 		
 			while($row = mysqli_fetch_assoc($q)){
+
 				if($row['u_image'] == ""){
 					echo "<img src='user/profiles/default-dp.png' alt='Default Profile Pic'>";
 				} else {
@@ -48,4 +49,11 @@ include "header.php";
 		</div>
     </div>
 
+
+
 </div>	
+
+<?php
+include "bottomcontentbar.php";
+?>
+

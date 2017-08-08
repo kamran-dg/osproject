@@ -54,4 +54,7 @@ include "header.php";
 	</p>
   </form>
 </div>
+<?php
+include "bottomcontentbar.php";
+?>
 

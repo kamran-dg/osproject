@@ -35,7 +35,7 @@ else {
 
 <br><br>
 <div class="container" id=main-content>
-<h2>Welcome to <strong> <?php echo $_SESSION['u_name'];  ?></strong></h2>
+<h2>Welcome to <strong> <a href="userhome.php"><?php echo $_SESSION['u_name'];  ?></a></strong></h2>
 
 <div class="profile-menu pull-right" id="user-profile-menu">
         <ul class="list-1">
@@ -107,3 +107,7 @@ else {
   <?php endif ?>
   </form>
 </div>
+
+<?php
+include "bottomcontentbar.php";
+?>

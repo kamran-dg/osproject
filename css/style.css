@@ -26,6 +26,7 @@ a {
     -webkit-transition: background-color .15s,color .15s,border-color .15s,text-shadow .15s,opacity .15s;
     transition: background-color .15s,color .15s,border-color .15s,text-shadow .15s,opacity .15s;
     border-bottom: 2px solid #966B3A;
+    border-bottom: none;
 }
 a, .h, h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
@@ -200,4 +201,101 @@ input.user-logout {
 }
 .tbl-userprofile tr td {
     padding: 10px;
+}
+#main-content h2 strong a {
+    color: #666;
+}
+#main-content h2 strong a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* ---- Bottom COntent ---- */
+.content-bottom-bar {
+    padding: 20px 10px;
+    background-color: #D9D9D9;
+    width: 100%;
+}
+.content-bottom-bar .shipping-time{
+    padding: 10px;
+}
+.group {
+    max-width: 1110px;
+    margin: auto;
+}
+.shipping-time h1 {
+    font-family: Monaco,monospace;
+    text-transform: none;
+    font-size: 12px;
+    color: #fff;
+    margin: 12px 0;
+}
+.shipping-time h1 a {
+    color: white;
+    font-size: 12px;
+    border-bottom: 1px solid #fff;
+}
+.shipping-time h1 a:hover {
+    color: white;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    cursor: default;
+}
+.br{
+    display: none;
+}
+.box{
+    color: #333;
+    display: inline-block;
+    padding: 4px 10px;
+    background: #ECEBEB;
+    margin: 1px 25px 1px 5px;
+}
+.news-letter {
+    float: right;
+    font-size: 13px;
+    display: inline;
+    padding: 10PX;
+}
+.news-letter h1 {
+    color: #fff;
+    margin: 8px 0;
+}
+.content-bottom-bar form {
+    max-width: 400px;
+    margin: auto;
+}
+.content-bottom-bar input {
+    margin: 0;
+    width: auto;
+    float: left;
+    border: none!important;
+    line-height: 18px;
+    display: inline-block;
+    zoom: 1;
+    padding: 4px 10px;
+    background: #ECEBEB;
+    color: #333;
+    border-radius: 0;
+}
+.content-bottom-bar input[type=submit] {
+    color: red;
+    text-decoration: underline;
+    width: 29%;
+    float: right;
+    letter-spacing: 2px;
+    outline: 0;
+    cursor: pointer;
+    -webkit-appearance: button;
+    font-family: Geogrotesque-SemiBold,sans-serif;
+    font-weight: 400;
+    font-size: .625rem;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.content-bottom-bar input:focus {
+    background-color: white!important;
+    outline: none !important;
 }
