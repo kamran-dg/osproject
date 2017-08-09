@@ -66,6 +66,7 @@ else {
 </li>
           <li><a href="editprofile.php">Edit Profile</a></li>
           <li><a href="viewprofile.php">View Profile</a></li>
+          <li><a href="addproduct.php">Publish Product</a></li>
           <li><form action="login.php" method="post"><a href="login.php"><input type="submit"  name="user-logout" value="Logout" class="user-logout"></a></form></li>
         </ul>
     </div>

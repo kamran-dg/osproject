@@ -460,3 +460,35 @@ font-size: .625rem;
 .carousel-indicators .active span{
     color: #966B3A;
 }
+
+/*----- Product Publish Page ---- */
+.header-title{
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mce-path-item {
+    display: none !important;
+    cursor: pointer;
+    color: #333;
+}
+.mce-notification-warning *, .mce-notification-warning .mce-progress .mce-text {
+    color: #8a6d3b;
+    display: none !important;
+}
+.mce-notification-inner {
+    display: none !important;
+}
+.currencyinput {
+    border: 1px inset #ccc;
+    padding: 15px;
+    font-size: 18px;
+}
+.currencyinput input {
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}

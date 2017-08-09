@@ -4,6 +4,8 @@ include_once ("include/phpscripts.php");
 <?php
 include "header.php";
 ?>
+
+
 <br><br>
 <div class="container" id=content-registration>
 <h1 class="sign-up-header">Login</h1>
