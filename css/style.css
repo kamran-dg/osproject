@@ -469,18 +469,7 @@ font-size: .625rem;
     font-size: 20px;
     font-weight: bold;
 }
-.mce-path-item {
-    display: none !important;
-    cursor: pointer;
-    color: #333;
-}
-.mce-notification-warning *, .mce-notification-warning .mce-progress .mce-text {
-    color: #8a6d3b;
-    display: none !important;
-}
-.mce-notification-inner {
-    display: none !important;
-}
+
 .currencyinput {
     border: 1px inset #ccc;
     padding: 15px;

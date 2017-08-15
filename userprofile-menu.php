@@ -25,7 +25,6 @@
         echo "<br>";
       }
 ?>
-  
 </li>
           <li><a href="editprofile.php">Edit Profile</a></li>
           <li><a href="viewprofile.php">View Profile</a></li>
